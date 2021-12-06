@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment.AddPostFragment">
+
+    <ImageView
+        android:layout_gravity="center"
+        android:layout_width="350dp"
+        android:layout_height="300dp"
+        android:layout_margin="20dp"
+        android:src="@drawable/ic_default_image"
+        android:id="@+id/addpost_image_view"
+        />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_below="@id/logo"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"
+        android:hint="Caption"
+        android:id="@+id/name_layout_ep"
+        android:layout_height="60dp" >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="text"
+            android:id="@+id/cation_addpost" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Sumbit Post"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="15dp"
+        android:textColor="#fff"
+        android:background="@drawable/auth_btn"
+        android:id="@+id/submitpost_btn"/>
+
+
+</LinearLayout>

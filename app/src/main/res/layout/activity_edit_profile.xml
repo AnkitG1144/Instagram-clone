@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.EditProfileActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/profile_img"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:id="@+id/profile_image_edit_profile"
+        />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_below="@id/logo"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="10dp"
+        android:hint="Full name"
+        android:id="@+id/name_layout_ep"
+        android:layout_height="60dp" >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="text"
+            android:id="@+id/name_ep" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_below="@id/logo"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="10dp"
+        android:hint="Email"
+        android:id="@+id/email_layout_ep"
+        android:layout_height="60dp" >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="text"
+            android:editable="false"
+            android:id="@+id/email_ep" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_below="@id/logo"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="10dp"
+        android:hint="Mobile no."
+        android:id="@+id/mobile_layout_ep"
+        android:layout_height="60dp" >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="text"
+            android:id="@+id/mobile_ep" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Sumbit"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="15dp"
+        android:textColor="#fff"
+        android:background="@drawable/auth_btn"
+        android:id="@+id/submit_ep_btn"/>
+
+
+</LinearLayout>
