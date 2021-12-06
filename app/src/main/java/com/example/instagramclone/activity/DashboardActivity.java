@@ -20,6 +20,8 @@ public class DashboardActivity extends AppCompatActivity implements BottomNaviga
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
 
+        getSupportActionBar().setTitle("Instagram");
+
         navBtn = findViewById(R.id.bottomNavBar);
 
         navBtn.setOnNavigationItemSelectedListener(this);

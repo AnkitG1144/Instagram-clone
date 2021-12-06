@@ -77,7 +77,7 @@ public class AddPostFragment extends Fragment {
                         //2: update user modal with post key
 
                         final String msg = caption.getText().toString();
-                        final String dateTime = new SimpleDateFormat("dd MM yyyy HH mm ss", Locale.getDefault())
+                        final String dateTime = new SimpleDateFormat("dd MMMM yyyy HH:mm:ss", Locale.getDefault())
                                 .format(new Date());
                         final String fileName = new SimpleDateFormat("ddMMyyy_HHmmss", Locale.getDefault())
                                 .format(new Date());
@@ -120,6 +120,8 @@ public class AddPostFragment extends Fragment {
                                                                     @Override
                                                                     public void onSuccess(Void unused) {
                                                                         dialog.dismiss();
+                                                                        postImage.setImageResource(R.drawable.ic_default_image);
+                                                                        caption.setText("");
                                                                         Toast.makeText(getContext(), "Post Added Successfully", Toast.LENGTH_SHORT).show();
                                                                     }
                                                                 })
